@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+   <item
+	   android:id="@+id/file"
+	   android:title="file"
+	   android:showAsAction="always|withText">
+	   <menu>
+		   <item
+			   android:id="@+id/file_new"
+			   android:title="new"/>
+		   <item
+			   android:id="@+id/file_open"
+			   android:title="open"/>
+		   <item
+			   android:id="@+id/file_save"
+			   android:title="save"/>
+	   </menu>
+   </item>
+</menu>
