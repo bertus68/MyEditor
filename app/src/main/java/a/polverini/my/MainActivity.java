@@ -115,6 +115,14 @@ public class MainActivity extends Activity
 		}
 	}
 	
+	/*
+	 compile "com.android.support:support-v4:27.0.2"
+	 compile "com.android.support:support-v13:27.0.2"
+	 compile "com.android.support:cardview-v7:27.0.2"
+	 compile "com.android.support:appcompat-v7:27.0.2"
+	 compile 'com.android.support:design:27.0.2'
+	 
+	*/
 	public  boolean isReadStoragePermissionGranted() {
         if (Build.VERSION.SDK_INT >= 23) {
             if (checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
@@ -122,7 +130,7 @@ public class MainActivity extends Activity
                 return true;
             } else {
                 System.out.println("READ_EXTERNAL_STORAGE denied");
-                ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, 3);
+              //  ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, 3);
                 return false;
             }
         } else { 
@@ -139,7 +147,7 @@ public class MainActivity extends Activity
                 return true;
             } else {
                 System.out.println("WRITE_EXTERNAL_STORAGE denied");
-                ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 2);
+              //  ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 2);
                 return false;
             }
         } else {
