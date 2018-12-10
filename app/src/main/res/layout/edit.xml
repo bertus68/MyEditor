@@ -8,8 +8,18 @@
 		android:gravity="top"
 		android:layout_width="fill_parent"
 		android:layout_height="fill_parent"
-		android:scrollbars="vertical"
+		android:layout_weight="0.2"
+		android:scrollbars="vertical|horizontal"
 		android:inputType="text|textNoSuggestions|textMultiLine"
 		android:text=""/>
-	
+<!-- -->
+	<TextView
+		android:id="@+id/log"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_weight="0.8"
+		android:gravity="top"
+		android:scrollbars="vertical"
+		android:text=""/>
+
 </LinearLayout>
